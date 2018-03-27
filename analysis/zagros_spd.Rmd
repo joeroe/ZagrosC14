@@ -1,0 +1,116 @@
+---
+title: "Zagros SPD analysis"
+output: html_notebook
+---
+
+```{r echo=FALSE}
+library("dplyr")
+library("ggplot2")
+library("magrittr")
+library("rcarbon")
+library("readr")
+```
+
+## Importing, cleaning and calibrating dates
+
+```{r}
+radiocarbon <- read_csv("./data/zagros_radiocarbon.csv")
+```
+
+Dates with an error of zero (presumably indicating that the error is unknown) create massive spikes. We don't want these.
+
+```{r}
+radiocarbon %>%
+  filter(error > 0) ->
+  radiocarbon
+```
+
+Normalising the calibrated dates is undesirable because it exaggerates calibration curve artifacts (see Roberts et al. 2017).
+
+```{r echo=FALSE}
+cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_id,
+                       normalised = FALSE, calCurves="intcal13")
+```
+
+## Simple SPD
+```{r echo=FALSE}
+simple_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+                  spdnormalised = TRUE)
+```
+```{r}
+ggplot() +
+  geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
+  scale_x_reverse()
+```
+
+
+## Controlling for oversampling
+
+The simple SPD is definitely bullshit, because certain sites have way more dates than others.
+
+```{r}
+ggplot(radiocarbon, aes(x = site_name)) +
+  geom_bar(stat = "count") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.3))
+```
+
+Binning dates by site reduces this effect.
+
+```{r echo=FALSE}
+bsites_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+                  bins = radiocarbon$site_name, spdnormalised = TRUE)
+```
+```{r}
+ggplot() +
+  geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
+  geom_area(data=bsites_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
+  scale_x_reverse()
+```
+
+Or, we can try Roberts et al.'s (2017) method of creating arbitrary bins consisting of any dates from the same site within a given interval (*h*) in uncalibrated years. However, this method may be sensitive to the choice of *h*.
+
+```{r echo=FALSE}
+bintrv <- lapply(c(10, 25, 50, 100, 200, 500), binPrep,
+                 sites = radiocarbon$site_name, ages = radiocarbon$cra)
+bintrv_spd <- lapply(bcrema, function(b) {
+  spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+                  bins = b, spdnormalised = TRUE)
+})
+```
+```{r}
+ggplot() +
+  geom_area(data=bsites_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
+  geom_line(data=bintrv_spd[[1]]$grid, mapping=aes(x=calBP, y=PrDens), colour="red") +
+  geom_line(data=bintrv_spd[[2]]$grid, mapping=aes(x=calBP, y=PrDens), colour="orange") +
+  geom_line(data=bintrv_spd[[3]]$grid, mapping=aes(x=calBP, y=PrDens), colour="yellow") +
+  geom_line(data=bintrv_spd[[4]]$grid, mapping=aes(x=calBP, y=PrDens), colour="green") +
+  geom_line(data=bintrv_spd[[5]]$grid, mapping=aes(x=calBP, y=PrDens), colour="blue") +
+  geom_line(data=bintrv_spd[[6]]$grid, mapping=aes(x=calBP, y=PrDens), colour="black") +
+  scale_x_reverse()
+```
+
+The sensitivity analysis shows that for values of *h* between 10 and 500, the resulting SPDs are more similar to each other than to the binned-by-site SPD. Low and high intervals appear to mostly amplify the extremes of the SPD. A middle value of *h*=200 therefore seems best.
+
+```{r echo=FALSE}
+bins <- binPrep(radiocarbon$site_name, radiocarbon$cra, 200)
+zagros_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+                  bins = bins, spdnormalised = TRUE)
+```
+```{r}
+ggplot() +
+  geom_area(data=zagros_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
+  scale_x_reverse()
+```
+
+## Simulating a confidence envelope
+
+Using Shennan et al.'s (2013) method, we can use Monte Carlo simulation to account for:
+1. Taphonomic effects, by using an exponential null model
+2. The effect of the calibration curve (simulated dates are calibrated using the same curve)
+
+```{r}
+# TODO: out of memory
+# modelTest(cal_dates, radiocarbon$error, nsim = 10, bins = bins, 
+#           timeRange = c(20000, 5000), model = "exponential",
+#           datenormalised = FALSE, spdnormalised = TRUE, ncores=2)
+```
