@@ -9,3 +9,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/joeroe/zagrosc14
 BugReports: https://github.com/joeroe/zagrosc14/issues
+RoxygenNote: 6.0.1

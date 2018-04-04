@@ -1,0 +1,475 @@
+tcec_id,source_id,lchto_id,name,name2,latitude,longitude,coord_precision,coord_source,geomorphology,periods,short_period,period_LP,period_MP,period_UP,period_EP,period_N0,period_N1.1,period_N1.2,period_N2,period_N3,period_C1,period_C2,period_C3,period_B,period_H,area,finds_n,excavated,references,comments
+1,H158,,Pal Barik,,33.743,47.2273,,Map,Flat open air,Lower Palaeolithic,LP,x,,,,,,,,,,,,,,4000,89,0,Mortensen 1993: 161-3,
+2,H54,,Ghar Huchi,,33.7142,47.0715,,Map,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,62,14,0,Mortensen 1993: 163,
+3,H83,,Ghar Villa,,33.7981,47.0091,,Map,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,16,40,0,Mortensen 1993: 163,
+4,H95,,Ghar Sefid,,33.7456,47.0106,,Map,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,12,38,0,Mortensen 1993: 164,
+5,H29,,Chesmeh Kahreh,,33.7427,47.0164,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,55,0,Mortensen 1993: 164,
+6,H94,,Sar Sarab A,,33.737,47.0182,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,19,0,Mortensen 1993: 164,
+7,H101,,Hulailan 101,,33.7868,47.1247,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,27,0,Mortensen 1993: 164,
+8,H136,,Saimarreh E,,33.7158,47.1378,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,29,0,Mortensen 1993: 164,
+9,H138,,Saimarreh F,,33.7132,47.1505,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,55,0,Mortensen 1993: 164,
+10,H31,,Mar Gurgalan Sarab,,33.744,47.0098,,Map,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,96,433,0,Mortensen 1993: 165-6,
+11,H22,,Mar Ruz,,33.75468779,47.02657124,5,Ground,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,66,311,0,Mortensen 1993: 166,
+12,H24,,Ghar-i Gagel,,33.7575,47.0161,,Map,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,12,3,0,Mortensen 1993: 166,
+13,H42,,Sal Mar,,33.7642,47.0443,,Map,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,32,3,0,Mortensen 1993: 166,
+14,H43-44,,Dar Mar,,33.75072962,47.04805819,5,Ground,Cave/shelter,Epipalaeolithic or Neolithic?,EP/N,,,,?,?,?,?,?,?,,,,,,599,75,0,Mortensen 1993: 166-7,
+15,H79,,Ghar Qalajaha,,33.754,47.0376,,Map,Cave/shelter,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,8,4,0,Mortensen 1993: 167,
+16,H71,,Warbar,,33.7929,47.0878,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,,6,0,Mortensen 1993: 167,
+17,H6,,Gharacherach A,,33.7447,47.042,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,2000000,5,0,Mortensen 1993: 167,
+18,H5,,Gharacherach B,,33.7417,47.0439,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,4,7,0,Mortensen 1993: 167,
+19,H51,,Saimarreh A,,33.7072,47.0799,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,,18,0,Mortensen 1993: 167,
+20,H52,,Saimarreh B,,33.7104,47.075,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,285,134,0,Mortensen 1993: 167,
+21,H53,,Saimarreh C,,33.7143,47.0711,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,,13,0,Mortensen 1993: 167,
+22,H61,,Saimarreh D,,33.7149,47.0634,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,50,33,0,Mortensen 1993: 167,
+23,H60,,Tepe Sadazuord,,33.733,47.0337,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,,35,0,Mortensen 1993: 167,
+24,H93,,Sar Sarab B,,33.7383,47.0187,,Map,Flat open air,Upper or Epipalaeolithic?,UP/EP,,,?,?,,,,,,,,,,,1200,119,0,Mortensen 1993: 167-168,
+25,,,Sar Khalija,Hulailan-83 SF1,33.734,47.2235,,Map,Single find,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,0,1,0,Mortensen 1993: 163,
+26,,,Ghar Villa terrace,,33.7981,47.0091,,Map,Flat open air,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,,0,Mortensen 1993: 163,
+27,,,Warwasi,,34.38944907,47.16563806,,RS,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,1,Braidwood et al. 1961; Olszewski 1993,
+28,,,Ghar-e Khar,Markhaley,34.4002745,47.44018641,5,Ground,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,1,Smith 1967; Hesse 1989; Vahdati Nasab 2010,
+29,LR.565 6I.5,,Khezr,,,,,,Cave/shelter,Upper Palaeolithic or Epipalaeolithic,UP/EP,,,?,?,,,,,,,,,,,24,43,0,Roustaei et al. 2004,
+30,LR.565 6I.6,5971,Gilvara I,Gilvaran Cave,33.47,48.31555556,,Literature,Cave/shelter,Middle and Upper Palaeolithic,MP–UP,,x,x,,,,,,,,,,,,130,357,1,Roustaei et al. 2004; Bazgir et al. 2014,
+31,LR.565 6I.7,,Gilvara II,,,,,,Cave/shelter,Upper Palaeolithic,UP,,,x,,,,,,,,,,,,17,126,0,Roustaei et al. 2004,
+32,LR.565 6I.8,,Abzadeh,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,50,53,0,Roustaei et al. 2004,
+33,LR.565 6I.9,,Tang-i Barikeh I,,,,,,Cave/shelter,Upper Palaeolithic,UP,,,x,,,,,,,,,,,,35,25,0,Roustaei et al. 2004,
+34,LR.565 6I.10,,Tang-i Barikeh II,,,,,,Cave/shelter,Upper Palaeolithic or Epipalaeolithic,UP/EP,,,?,?,,,,,,,,,,,70,17,0,Roustaei et al. 2004,
+35,LR.565 6I.11,,Tang-i Barikeh III,,,,,,Cave/shelter,Upper Palaeolithic or Epipalaeolithic,UP/EP,,,?,?,,,,,,,,,,,10,11,0,Roustaei et al. 2004,
+36,LR.565 7III.12,,Tang Siah,,,,,,Cave/shelter,Upper Palaeolithic,UP,,,x,,,,,,,,,,,,40,24,0,Roustaei et al. 2004,
+37,LR.565 7III.13,,Sorkh-e Lizeh,,,,,,Cave/shelter,Upper Palaeolithic,UP,,,x,,,,,,,,,,,,110,356,0,Roustaei et al. 2004,
+38,LR.565 7III.14,,Gachi,,,,,,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,185,15,0,Roustaei et al. 2004,
+39,LR.555 6III.19,,Takht-e Shir I,,,,,,Cave/shelter,Late Palaeolithic or early Neolithic,EP/N,,,?,?,?,?,?,,,,,,,,9800,191,0,Roustaei et al. 2004,
+40,LR.555 6III.20,,Takht-e Shir II,,,,,,Cave/shelter,Late Palaeolithic or early Neolithic,EP/N,,,?,?,?,?,?,,,,,,,,,75,0,Roustaei et al. 2004,
+41,LR.555 6III.21,,Far-e Kash I,,,,,,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,55,23,0,Roustaei et al. 2004,
+42,LR.555 6III.22,,Far-e Kash II,,,,,,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,80,15,0,Roustaei et al. 2004,
+43,LR.555 6III.23,,Dare-e Eshkaft,,,,,,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,140,106,0,Roustaei et al. 2004,
+44,LR.555 6III.24,,Vare Zard,,,,,,Cave/shelter,Neolithic,,,,,,?,?,?,?,?,,,,,,2000,277,0,Roustaei et al. 2004,
+45,LR.555 6III.25,,Tool Kash I,,,,,,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,55,137,0,Roustaei et al. 2004,
+46,LR.555 6III.26,,Tool Kash II,,,,,,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,50,39,0,Roustaei et al. 2004,
+47,LR.555 7II.16,,Mar-Jahannam,,,,,,Cave/shelter,Chalcolithic,CH,,,,,,,,,,?,?,?,,,20,2,0,Roustaei et al. 2004,
+48,LR.555 7II.17,,Dozaleh I,,,,,,Cave/shelter,Chalcolithic,CH,,,,,,,,,,?,?,?,,,215,4,0,Roustaei et al. 2004,
+49,LR.555 7II.18,,Dozaleh II,,,,,,Cave/shelter,Chalcolithic,CH,,,,,,,,,,?,?,?,,,200,1,0,Roustaei et al. 2004,
+50,,,Asiab,,34.32211616,47.13595498,5,Ground,Tell,"Early Neolithic, Late Chalcolithic",N+CH,,,,,,?,?,,,,,x,,,,,1,Darabi et al. 2016,
+51,,,Tepe Guran,,33.75652286,47.09763845,5,Ground,Tell,Aceramic and early ceramic Neolithic,N,,,,,x,?,?,,,,,,,,,,1,Mortensen 2014,
+52,,,Sarab,,34.33530735,47.14011389,5,Ground,Tell,Later Neolithic,N,,,,,,,,?,?,,,,,,,,1,Braidwood 1960; Braidwood et al. 1961; Hole 1961; McDonald 1979,
+53,,,Abdul Hosein,Tepe Abdul Hosein,34.073333,47.9725,20000,Approximation,Tell,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,Pullar 1981; Pullar 1990; Darabi 2015,"""Close to Nurabad"" (Pullar 1981)"
+54,,,Chogha Golan,,33.37754018,46.27116986,5,Ground,Tell,Aceramic Neolithic,N,,,,,x,,,,,,,,,,,,1,Conard et al. 2013,
+55,,,East Chia Sabz,,33.343053,47.131063,,Map,Tell,PPN,N,,,,,x,,,,,,,,,,5000,,1,Brojeni et al. 2007; Darabi et al. 2011; Darabi & Glassock 2013; Darabi et al. 2013,
+56,,,Sheikh-e Abad,,34.611895,47.269731,5,Ground,Tell,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,Matthews et al. 2013,
+57,,,Jani,Chia Jani,33.94795,46.783464,5,Ground,Tell,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,Matthews et al. 2013,
+58,,18796,Kaldar,,33.55694444,48.29305556,,Literature,Cave/shelter,"Middle, Upper and Epipalaeolithic",MP–EP,,x,x,x,,,,,,,,,,,272,,1,Bazgir et al. 2014; Bazgir et al. 2017,
+59,KR-1,,Gar Arjeneh,,33.44166667,48.33916667,,Literature,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,,,1,Hole 2007; Bazgir et al. 2014,
+60,KR-2,,Kunji,,33.4429,48.3594,,Map,Cave/shelter,"Middle Palaeolithic, Late Chalcolithic",MP+CH,,x,,,,,,,,,,x,,,,,1,Field 1951: 91; Baumler & Smith 1993; Hole 2007,
+61,KR-3,,Khorramabad-61 3,,33.4307,48.3506,,Map,Flat open air,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+62,KR-4,,Khorramabad-61 4,,33.4176,48.3893,,Map,Flat open air,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+63,KR-5,,Masur,,33.4452,48.3236,,Map,Flat open air,"Middle Uruk, Bronze Age",,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+64,KR-6,,Daurai,,33.4207,48.3442,,Map,Flat open air,Middle & Late Chalcolithic,,,,,,,,,,,,x,x,,,,,0,Hole & Flannery 1967; Hole 2007,
+65,KR-7,,Khorramabad-61 7,,33.4192,48.3114,,Map,Flat open air,Middle Uruk,,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+66,KR-8,,Khorramabad-61 8,,33.4004,48.3687,,Map,Flat open air,Middle Chalcolithic,,,,,,,,,,,,x,,,,,,0,Hole & Flannery 1967; Hole 2007,
+67,KR-9,,Khorramabad-61 9,,33.4541,48.2527,,Map,Flat open air,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+68,KR-10,,Khorramabad-61 10,,33.4453,48.2597,,Map,Flat open air,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+69,KR-11,,Khorramabad-61 11,,33.469,48.3171,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+70,KR-12,,Khorramabad-61 12,,33.4697,48.3226,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+71,KR-13,,Yafteh,,33.50833333,48.21138889,,Literature,Cave/shelter,Middle and Upper Palaeolithic,MP–UP,,x,x,,,,,,,,,,,,,,1,Hole & Flannery 1967; Hole 2007; Otte et al. 2007; Otte et al. 2011,
+72,KR-14,,Khorramabad-61 14,,33.4949,48.2455,,Map,Cave/shelter,Middle Uruk,,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+73,KR-15,,Ghamari,,33.49194444,48.34888889,,Literature,Cave/shelter,"Middle and Upper Palaeolithic, Late Chalcolithic",MP–UP+CH,,x,x,,,,,,,,,x,,,,,1,Hole 2007; Bazgir et al. 2014,
+74,KR-16,,Pasangar,Pa Sangar,33.4854,48.3409,,Map,Cave/shelter,Upper and Epipalaeolithic,UP–EP,,,x,x,,,,,,,,,,,,,1,Hole & Flannery 1967; Hole 2007,
+75,KR-17,,Khorramabad-61 17,,33.4847,48.3447,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+76,KR-18,,Khorramabad-61 18,,33.4838,48.3488,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+77,KR-19,,Khorramabad-61 19,,33.4958,48.3628,,Map,Flat open air,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+78,KR-20,,Bagh-i No,,33.4686,48.3437,,Map,Flat open air,"Early Chalcolithic, Middle Uruk",,,,,,,,,,,x,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+79,KR-21,,Khorramabad-61 21,,33.4512,48.2911,,Map,Flat open air,Late Bronze Age,,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+80,KR-22,,Khorramabad-61 22,,33.4496,48.2586,,Map,Flat open air,Late Bronze Age,,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+81,KR-23,,Khorramabad-61 23,,33.4304,48.2935,,Map,Flat open air,Early Bronze Age,,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+82,KR-24,,Khorramabad-61 24,,33.4962,48.2375,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+83,KR-25,,Khorramabad-61 25,,33.4332,48.31,,Map,Flat open air,"Middle Uruk, Early Bronze Age, Late Bronze Age",,,,,,,,,,,,,,x,,,,0,Hole & Flannery 1967; Hole 2007,
+84,KR-26,,Khorramabad-61 26,,33.4777,48.3158,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+85,KR-27,,Khorramabad-61 27,,33.4794,48.3121,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+86,KR-28,,Khorramabad-61 28,,33.4801,48.306,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+87,KR-29,,Khorramabad-61 29,,33.4816,48.3015,,Map,Cave/shelter,,,,,,,,,,,,,,,,,,,0,Hole & Flannery 1967; Hole 2007,
+88,,,Bisitun Cave,,34.39027778,47.4375,,Literature,Cave/shelter,Middle and Upper Palaeolithic,MP–UP,,x,x,,,,,,,,,,,,,,1,Coon 1951; Dibble 1984; Trinkaus & Biglari 2006,
+89,,,Mar Tarik,,34.39027778,47.4375,,Literature,Cave/shelter,Middle and Upper Palaeolithic,MP–UP,,x,x,,,,,,,,,,,,,,1,Young & Smith 1966; Smith 1986; Biglari 2001; Jaubert et al. 2006; Trinkhaus & Biglari 2006; Jaubert et al. 2009,
+90,,,Mar Gwergalan,,33.74395252,47.00981873,5,Ground,Cave/shelter,Lower Palaeolithic,LP,x,,,,,,,,,,,,,,,,1,Davoudi et al. 2015,
+91,SB.120,,Salmaneh,,,,,,Cave/shelter,"Upper Palaeolithic, Epipalaeolithic",,,,x,x,,,,,,,,,,,4,,0,Biglari et al. 2013,
+92,SB.107,,Darband Zard,,,,,,Cave/shelter,"Upper Palaeolithic, Epipalaeolithic",,,,x,x,,,,,,,,,,,50,,0,Biglari et al. 2013,
+93,SB.103,,Sivar Howar 1,,,,,,Cave/shelter,"Epipalaeolithic, Chalcolithic, Parthian",,,,,x,,,,,,?,?,?,,x,25,,0,Biglari et al. 2013,
+94,SB.113,,Dar Pellah,,,,,,Cave/shelter,"Epipalaeolithic, Bronze Age, Islamic",,,,,x,,,,,,,,,x,x,200,,0,Biglari et al. 2013,
+95,SB.104,,Sivar Howar 2,,,,,,Cave/shelter,"Epipalaeolithic, Protohistoric",,,,,x,,,,,,,,,x,,100,,0,Biglari et al. 2013,
+96,SB.112,,Serakah,,,,,,Cave/shelter,Epipalaeolithic,,,,,x,,,,,,,,,,,20,,0,Biglari et al. 2013,
+97,SB.119,,Salmaneh Rock Shelter,,,,,,Cave/shelter,"Epipalaeolithic, Parthian",,,,,x,,,,,,,,,,x,35,,0,Biglari et al. 2013,
+98,SB.078,,Karah Poo 2,,,,,,Flat open air,"Epipalaeolithic, Parthian, Islamic",,,,,x,,,,,,,,,,x,12000,,0,Biglari et al. 2013,
+99,SB.050,,Kani Siyah,,,,,,Flat open air,"Neolithic, Chalcolithic",,,,,,?,?,?,?,?,?,?,?,,,16000,,0,Biglari et al. 2013,
+100,SB.012,,Seraw Houlah,,,,,,Flat open air,"Neolithic, Chalcolithic, Bronze Age, Parthian, Sasanian",,,,,,?,?,?,?,?,?,?,?,x,x,,,0,Biglari et al. 2013,
+101,Site 1?,,Ghenil,,34.20471516,47.51348877,5,Ground,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+102,Site 2,,Harsin 2,,34.28485991,47.43076805,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+103,Site 3,,Harsin 3,,34.30215337,47.41274685,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+104,Site 4,,Harsin 4,,34.32557573,47.41788791,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+105,Site 5,,Harsin 5,,34.33615192,47.4233241,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+106,Site 6,,Harsin 6,,34.27479788,47.42168937,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+107,Site 7?,,Ganj Dareh,,34.27210924,47.4758391,5,Ground,Tell,,,,,,,,,,,,,,,,,,,1,Mortensen & Smith 1977,
+108,Site 8,,Harsin 8,,34.25851793,47.46821501,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+109,Site 9?,,Qasemi,,34.20471516,47.51348877,5,Ground,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+110,Site 10,,Harsin 10,,34.24473594,47.49918648,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+111,Site 11,,Harsin 11,,34.21108316,47.51960488,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+112,Site 12,,Harsin 12,,34.20551568,47.54497672,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+113,Site 13,,Harsin 13,,34.28732198,47.41395259,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+114,Site 14,,Harsin 14,,34.25114842,47.5518201,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+115,Site 15,,Harsin 15,,34.24726921,47.55214383,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+116,Site 16,,Harsin 16A,,34.25340165,47.5434817,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+117,Site 17,,Harsin 16B,,34.2513,47.5396,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+118,Site 18,,Harsin 18,,34.22978855,47.62488783,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+119,Site 19,,Harsin 19,,34.23498489,47.61195668,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+120,Site 20,,Harsin 20,,34.23363169,47.6125025,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+121,Site 21,,Harsin 21,,34.14886827,47.48660095,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+122,Site 22,,Harsin 22,,34.15068259,47.48045136,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+123,Site 23,,Harsin 23,,34.2325815,47.38243627,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+124,Site 24,,Harsin 24,,34.23671938,47.38192197,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+125,Site 25?,,Qala Kamand Bagh,,34.23471446,47.37182125,5,Ground,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+126,Site 26,,Harsin 26,,34.34166346,47.40382271,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+127,Site 27,,Harsin 27,,34.34446727,47.39763323,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+128,Site 28,,Harsin 28,,34.32874758,47.36989772,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+129,Site 29,,Harsin 29,,34.34897083,47.36057864,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+130,Site 30,,Harsin 30,,34.26688156,47.39693332,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+131,Site 31,,Harsin 31,,34.27277125,47.36767016,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+132,Site 32,,Harsin 32,,34.25538032,47.41146479,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+133,Site 33,,Harsin 33,,34.24224981,47.46246092,,Map,,,,,,,,,,,,,,,,,,,,,Mortensen & Smith 1977,
+134,SF2,,Hulailan-83 SF2,,33.8009,47.0137,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+135,SF3,,Hulailan-83 SF3,,33.7948,47.0127,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+136,SF4,,Hulailan-83 SF4,,33.7964,47.0162,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+137,SF5,,Hulailan-83 SF5,,33.7958,47.0221,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+138,SF6,,Hulailan-83 SF6,,33.796,47.0318,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+139,SF7,,Hulailan-83 SF7,,33.7405,47.0136,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+140,SF8,,Hulailan-83 SF8,,33.7407,47.0205,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+141,SF9,,Hulailan-83 SF9,,33.7417,47.0281,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+142,SF10,,Hulailan-83 SF10,,33.7398,47.0298,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+143,SF11,,Hulailan-83 SF11,,33.7427,47.0352,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+144,SF12,,Hulailan-83 SF12,,33.7136,47.035,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+145,SF13,,Hulailan-83 SF13,,33.7216,47.0727,,Map,Flat open air,Middle Palaeolithic,,,x,,,,,,,,,,,,,0,1,,Mortensen 1993,
+146,SF14,,Hulailan-83 SF14,,33.7961,47.0154,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+147,SF15,,Hulailan-83 SF15,,33.7958,47.0213,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+148,SF16,,Hulailan-83 SF16,,33.796,47.0263,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+149,SF17,,Hulailan-83 SF17,,33.7765,47.0879,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+150,SF18,,Hulailan-83 SF18,,33.7115,47.0631,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+151,SF19,,Hulailan-83 SF19,,33.7153,47.0597,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+152,SF20,,Hulailan-83 SF20,,33.7188,47.0536,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+153,SF21,,Hulailan-83 SF21,,33.7196,47.0513,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+154,SF22,,Hulailan-83 SF22,,33.7202,47.0482,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+155,SF23,,Hulailan-83 SF23,,33.721,47.0444,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+156,SF24,,Hulailan-83 SF24,,33.7245,47.0406,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+157,SF25,,Hulailan-83 SF25,,33.7298,47.033,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+158,SF26,,Hulailan-83 SF26,,33.7361,47.0178,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+159,SF27,,Hulailan-83 SF27,,33.7472,47.0103,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+160,SF28,,Hulailan-83 SF28,,33.7547,47.021,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+161,SF29,,Hulailan-83 SF29,,33.7416,47.0204,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+162,SF30,,Hulailan-83 SF30,,33.7439,47.027,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+163,SF31,,Hulailan-83 SF31,,33.742,47.0281,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+164,SF32,,Hulailan-83 SF32,,33.7392,47.0295,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+165,SF33,,Hulailan-83 SF33,,33.741,47.0319,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+166,SF34,,Hulailan-83 SF34,,33.4708,47.0315,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+167,SF35,,Hulailan-83 SF35,,33.7416,47.0349,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+168,SF36,,Hulailan-83 SF36,,33.7429,47.0368,,Map,Flat open air,Epipalaeolithic,,,,,x,,,,,,,,,,,0,1,,Mortensen 1993,
+169,KC1,,Kurtavij Cave 1,,34.6113,47.3044,50,Map,Cave/shelter,"Chalcolithic, Islamic, Historic",,,,,,,,,,,?,?,?,x,x,,,0,Motarjen 2013,
+170,KC2,,Kurtavij Cave 2,,34.6105,47.2773,50,Map,Cave/shelter,Neolithic or earlier,,?,?,?,?,?,?,?,?,?,,,,,,20,,0,Motarjen 2013,Illicit excavation
+171,KC3,,Kurtavij Cave 3,,34.609,47.275639,50,Map,Cave/shelter,Neolithic?,,,,,,?,?,?,?,?,,,,,,,,0,Motarjen 2013,Illicit excavation
+172,KC4,,Kurtavij Cave 4,,34.582,47.279,50,Map,Cave/shelter,"Islamic, Historic",,,,,,,,,,,,,,,x,,,0,Motarjen 2013,
+173,KC5,,Kurtavij Cave 5,,34.5832,47.2839,50,Map,Cave/shelter,Stone Age,,?,?,?,?,?,?,?,?,?,?,?,?,,,,,0,Motarjen 2013,
+174,,,Do-Ashkaft,,34.3954,47.1294,1000,Map,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,345,4000,0,Biglari & Heydari 2001; Biglari 2004; Heydari 2007,
+175,,,Malaverd,,,,,,Cave/shelter,Upper Palaeolithic,UP,,,x,,,,,,,,,,,,,,,Heydari 2007,
+176,,,Mar Dodar,,34.39027778,47.4375,,Literature,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,,,Heydari 2007,"Coordinates of Mar Tarik (TCEC89), on same escarpment"
+177,,,Mar Aftab,,34.39027778,47.4375,,Literature,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,,,Heydari 2007,"Coordinates of Mar Tarik (TCEC89), on same escarpment"
+178,,,Kal Anar,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+179,,,Shalam,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+180,,,Quchali I,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+181,,,Khan Ahmad 1,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+182,,,Khan Ahmad 2,,,,,,Cave/shelter,Middle Palaeolithic,MP,,x,,,,,,,,,,,,,,,,Heydari 2007,
+183,,,Sukhteh rockshelter 1,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+184,,,Sukhteh cave,,,,,,Cave/shelter,Epipalaeolithic,EP,,,,x,,,,,,,,,,,,,,Heydari 2007,
+185,,,Gird Ali Agha,,36.45,43.82,1000,CONTEXT,,Middle Neolithic,N,,,,,,,,x,,,,,,,7000,,1,Braidwood et al. 1983,Imported from radiocarbon database
+186,,,Ali Kosh,,32.56,47.32,1000,CONTEXT,,PPN,N,,,,,x,,,,,,,,,,,,1,,Imported from radiocarbon database
+187,,,Arpachiyah,,36.37,43.21,1000,CONTEXT,,Halafian and Ubaid,N+CH,,,,,,,,?,?,?,?,,,,,,1,,Imported from radiocarbon database
+188,,,Bakun B,,29.85,52.83,1000,CONTEXT,,Middle Chalcolithic,CH,,,,,,,,,,,x,,,,,,1,,Imported from radiocarbon database
+189,,,Banahilk,,36.65,44.54,1000,CONTEXT,,Halafian,,,,,,,,,?,?,,,,,,,,1,,Imported from radiocarbon database
+190,,,Bog-i-No,,33.47,48.35,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,Imported from radiocarbon database
+191,,,Chagha Sefid,,32.63,47.26,1000,CONTEXT,,Aceramic and early Neolithic,N,,,,,x,?,?,,,,,,,,,,1,Hole 1977,Imported from radiocarbon database
+192,,,Choga Mami,,33.9,45.17,1000,CONTEXT,,Late Neolithic (Samarra),N,,,,,,,,,x,,,,,,,,1,Oates 1969,Imported from radiocarbon database
+193,,,Gap A,,29.72,52.92,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,Imported from radiocarbon database
+194,,,Tepe Gawra,,36.43,43.34,1000,CONTEXT,,Halafian and Ubaid,N+CH,,,,,,,,?,?,?,?,,,,,,1,,Imported from radiocarbon database
+195,,,Tang-e Khiareh,,29.9175,52.4419,5,Literature,Flat open air,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,0,Roustaei & Mashkour 2016,
+196,,,Tell Hassuna,,36.464,42.9635,,Wikipedia,,Late Neolithic,N,,,,,,,,,x,,,,,,,,1,,Imported from radiocarbon database
+197,,,Jaffarabad,,32.21,48.22,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,Imported from radiocarbon database
+198,,,Karim Shahir,,35.5636,44.9565,1000,Map,Flat open air,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,Braidwood et al. 1983; Howe 1983,
+199,,,Jarmo,Qalat Jarmo,35.56,44.92,1000,CONTEXT,,Early Neolithic,N,,,,,?,?,?,,,,,,,,,,1,,Imported from radiocarbon database
+200,,,Kelek Asad Morad,,,,,,,PPN,N,,,,,x,,,,,,,,,,,,1,Moradi et al. 2016,Imported from radiocarbon database
+201,,,M'lefaat,,36.31,43.54,1000,CONTEXT,,PPN,N,,,,,x,,,,,,,,,,,,1,,Imported from radiocarbon database
+202,,,Tell Madhhur,,34.2,44.95,1000,CONTEXT,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,1,Peregrine & Ember 2002,Imported from radiocarbon database
+203,,,Tell Magzaliyah,,36.39,42.33,1000,CONTEXT,,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,,Imported from radiocarbon database
+204,,,Mahtaj,,30.5958,50.2416,20000,Approximation,,PPN,N,,,,,x,,,,,,,,,,,,1,,"No peer reviewed publications? Coordinates of nearest city, Behbahen"
+205,,,Malyan,Toll-e Maliun,29.99,52.52,1000,CONTEXT,Tell,Middle Neolithic to early Islamic,N–CH,,,,,,,,x,x,?,?,?,x,x,,,1,Abdi 2005,Imported from radiocarbon database
+206,,,Matarrah,,35.18,44.4,1000,CONTEXT,,Samarran/Hassunan,N,,,,,,,,,x,,,,,,,,1,Braidwood 1952,Imported from radiocarbon database
+207,,,Nemrik 9,,36.73,42.88,1000,CONTEXT,,PPN,N,,,,,x,,,,,,,,,,,,1,Kozlowski 1989,Imported from radiocarbon database
+208,,,Palegawra,,35.64,45.11,1000,CONTEXT,Cave/shelter,Zarzian,EP,,,,x,,,,,,,,,,,,,1,,Imported from radiocarbon database
+209,,,Qermez Dere,,36.38,42.45,1000,CONTEXT,,PPN,N,,,,,x,,,,,,,,,,,,1,Watkins 1989,Imported from radiocarbon database
+210,,,Sabz,,32.59,47.26,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,"Imported from radiocarbon database. Not sure which ""Sabz"" this actually is."
+211,,,Seh Gabi B,,34.59,48.04,1000,CONTEXT,Tell,Late Neolithic and Chalcolithic,N+CH,,,,,,,,,x,?,?,?,,,,,1,Peregrine & Ember 2002,Imported from radiocarbon database
+212,,,Seh Gabi C,,34.6,48.01,1000,CONTEXT,Tell,Late Neolithic and Chalcolithic,N+CH,,,,,,,,,x,?,?,?,,,,,1,Peregrine & Ember 2002,Imported from radiocarbon database
+213,,,Shimshara,,36.2006,44.9383,5,Literature,,Neolithic and Bronze Age,,,,,,?,?,?,?,?,,,,x,,,,1,http://www.czap.org/shimshara,Imported from radiocarbon database
+214,,,Siabid,,34.37,47.12,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,Imported from radiocarbon database
+215,,,Susa,,32.11,48.22,1000,CONTEXT,,Chalcolithic to historic,CH,,,,,,,,,,?,?,?,x,x,,,1,,Imported from radiocarbon database
+216,,,Tall-e Bakun A,,29.85,52.83,1000,CONTEXT,Tell,Chalcolithic,CH,,,,,,,,,,?,?,?,,,,,1,Fraser 2017,Imported from radiocarbon database
+217,,,Tall-e Bakun B,,29.85,52.83,1000,CONTEXT,Tell,Chalcolithic,CH,,,,,,,,,,?,?,?,,,,,1,,Imported from radiocarbon database
+218,,,Tall-i Jari A,,29.812906,53.043942,20000,Approximation,Tell,Chalcolithic,CH,,,,,,,,,,?,?,?,,,,,1,,"Described by Iranica as being ""20 km southeast of Persepolis"""
+219,,,Tall-i Jari B,,29.812906,53.043942,20000,Approximation,Tell,Pottery Neolithic,N,,,,,,?,?,?,?,,,,,,,,1,,"Described by Iranica as being ""20 km southeast of Persepolis"""
+220,,,Tall-i Mushki,,29.78,52.9,1000,CONTEXT,Tell,Early Pottery Neolithic,N,,,,,,?,?,,,,,,,,,,1,Nishiaki 2013,Imported from radiocarbon database
+221,,,Telul eth-Thalathat II,,36.48,42.5,1000,CONTEXT,,"Ubaid, Uruk, Assyrian",CH,,,,,,,,,,?,?,?,x,,,,1,Egami 1959,Imported from radiocarbon database
+222,,,Yanik Tepe,,37.9532,46.0015,10000,Map,Tell,Late Chalcolithic,CH,,,,,,,,,,,?,?,,,,,1,Burney 1961; Burney 1962,Imported from radiocarbon database
+223,,,Zawi Chemi Shanidar,,36.8,44.22,1000,CONTEXT,,Epipalaeolithic to PPN,EP–N,,,,x,x,,,,,,,,,,,,1,Solecki 1958,Imported from radiocarbon database
+224,,,Zeribar,,35.55,46.12,1000,CONTEXT,,,,,,,,,,,,,,,,,,,,1,,Imported from radiocarbon database
+225,,,Fasil,,32.8922,46.5919,5,Literature,,Neolithic,N,,,,,?,?,?,?,?,,,,,,30000,,0,Darabi & Fazeli 2009,
+226,,,Choga Khulaman,,33.3775,46.2711,5,Literature,,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,1,Nokandeh 2002; Darabi & Fazeli 2009,Nokandeh 2002 is an unpublished site report
+227,,,Gird Chai,,36.4268,43.8162,1000,Map,,Early Neolithic,N,,,,,?,?,?,,,,,,,,,,1,Braidwood et al. 1983,
+228,,,Tamerkhan,,33.9,45.17,1000,Approximation,Tell,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,0,Mortensen 2002,1 km from Chogha Mami (Mortensen 2002)
+229,,,Tuleli,,,,,,,,,,,,,,,,,,,,,,,,,,,
+230,,,Boneh Fazili,,32.2345,48.5485,1,RS,,Ubaid,CH,,,,,,,,,,,?,?,,,,,1,Kantor n.d.,"""about 2 kilometers northwest of Chogha Mish"" (Kantor)"
+231,,,Choga Bonut,,32.2222,48.505,1,Literature,,Aceramic Neolithic,N,,,,,x,,,,,,,,,,,,1,Alizadeh 2016,
+232,,,Choga Mish,,32.223149,48.554634,1,RS,,Ubaid,CH,,,,,,,,,,,?,?,,,,,1,,
+233,,,Tol-e Sabz,,28.8567,52.4463,5,Literature,,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,0,Mansouri & Ahmady 2015,
+234,,,Tol-e Basi,,,,,,,Neolithic,N,,,,,?,?,?,?,?,,,,,,,,,Pollock et al. 2010,
+235,,,Shanidar,,36.8006,44.2433,,Wikipedia,Cave/shelter,"Middle Palaeolithic, PPN",MP+N,,x,,,x,,,,,,,,,,,,1,,
+236,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+237,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+238,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+239,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+240,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+241,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+242,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+243,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+244,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+245,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+246,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+247,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+248,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+249,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+250,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+251,,,Mahidasht 1,,34.66557,46.66514,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+252,,,Mahidasht 2,,34.6463,46.66849,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+253,,,Mahidasht 3,,34.6019,46.6333,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+254,,,Mahidasht 4,,34.58681,46.72798,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+255,,,Mahidasht 5,,34.51811,46.71541,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+256,,,Mahidasht 6,,34.51308,46.72379,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+257,,,Mahidasht 7,,34.40249,46.65425,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+258,,,Mahidasht 8,,34.37149,46.69865,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+259,,,Mahidasht 9,,34.32876,46.73552,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+260,,,Mahidasht 10,,34.30865,46.70955,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+261,,,Mahidasht 11,,34.2567,46.73719,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+262,,,Mahidasht 12,,34.27848,46.74641,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+263,,,Mahidasht 13,,34.24665,46.77993,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+264,,,Mahidasht 14,,34.32792,46.79333,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+265,,,Mahidasht 15,,34.33043,46.80003,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+266,,,Mahidasht 16,,34.32289,46.80506,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+267,,,Mahidasht 17,,34.31786,46.81093,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+268,,,Mahidasht 18,,34.28351,46.81428,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+269,,,Mahidasht 19,,34.27346,46.82601,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+270,,,Mahidasht 20,,34.26843,46.82266,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+271,,,Mahidasht 21,,34.30948,46.83774,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+272,,,Mahidasht 22,,34.26173,46.8436,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+273,,,Mahidasht 23,,34.23324,46.84695,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+274,,,Mahidasht 24,,34.28435,46.86455,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+275,,,Mahidasht 25,,34.23827,46.89974,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+276,,,Mahidasht 26,,34.23324,46.90728,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+277,,,Mahidasht 27,,34.25419,46.91147,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+278,,,Mahidasht 28,,34.26173,46.91147,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+279,,,Mahidasht 29,,34.23575,46.94498,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+280,,,Mahidasht 30,,34.28603,46.96425,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+281,,,Mahidasht 31,,34.29608,46.98687,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+282,,,Mahidasht 32,,34.24832,47.09998,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+283,,,Mahidasht 33,,34.22151,47.26169,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+284,,,Mahidasht 34,,34.29608,47.2508,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+285,,,Mahidasht 35,,34.32205,47.21812,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+286,,,Mahidasht 36,,34.34132,47.18796,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+287,,,Mahidasht 37,,34.33211,47.1578,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+288,,,Mahidasht 38,,34.42176,46.97431,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+289,,,Mahidasht 39,,34.47035,46.98436,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+290,,,Mahidasht 40,,34.44187,47.01955,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+291,,,Mahidasht 41,,34.44857,47.0229,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+292,,,Mahidasht 42,,34.467,47.06061,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+293,,,Mahidasht 43,,34.48376,47.03715,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+294,,,Mahidasht 44,,34.49549,46.99525,500,Map,,"Neolithic (""J-Ware"")",N,,,,,?,?,?,?,?,,,,,,,,,Levine 1977,Site name unknown
+295,,,Mahidasht 45,,34.71333011,46.68105847,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+296,,,Mahidasht 46,,34.68484311,46.66346356,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+297,,,Mahidasht 47,,34.66473464,46.67184209,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+298,,,Mahidasht 48,,34.64797758,46.67351779,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+299,,,Mahidasht 49,,34.61613916,46.67016638,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+300,,,Mahidasht 50,,34.60273351,46.64167938,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+301,,,Mahidasht 51,,34.57676007,46.64754435,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+302,,,Mahidasht 52,,34.59100357,46.68022062,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+303,,,Mahidasht 53,,34.59519284,46.69278841,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+304,,,Mahidasht 54,,34.58765216,46.73551891,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+305,,,Mahidasht 55,,34.57257081,46.74724886,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+306,,,Mahidasht 56,,34.54324595,46.69278841,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+307,,,Mahidasht 57,,34.52397533,46.67435564,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+308,,,Mahidasht 58,,34.51894821,46.72127541,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+309,,,Mahidasht 59,,34.52900245,46.73551891,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+310,,,Mahidasht 60,,34.40081094,46.6626257,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+311,,,Mahidasht 61,,34.38154032,46.71038332,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+312,,,Mahidasht 62,,34.37148608,46.70619406,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+313,,,Mahidasht 63,,34.36310755,46.717924,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+314,,,Mahidasht 64,,34.35221546,46.7321675,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+315,,,Mahidasht 65,,34.32624202,46.74389744,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+316,,,Mahidasht 66,,34.30613355,46.71708615,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+317,,,Mahidasht 67,,34.27429513,46.71876185,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+318,,,Mahidasht 68,,34.25334881,46.74389744,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+319,,,Mahidasht 69,,34.27513299,46.75311383,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+320,,,Mahidasht 70,,34.24497028,46.78579009,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+321,,,Mahidasht 71,,34.23156463,46.79584433,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+322,,,Mahidasht 72,,34.2357539,46.8017093,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+323,,,Mahidasht 73,,34.24245672,46.80924998,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+324,,,Mahidasht 74,,34.24161887,46.81343924,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+325,,,Mahidasht 75,,34.23072678,46.85030478,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+326,,,Mahidasht 76,,34.26005163,46.84946692,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+327,,,Mahidasht 77,,34.27010587,46.83270986,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+328,,,Mahidasht 78,,34.2659166,46.82768275,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+329,,,Mahidasht 79,,34.26926802,46.81008783,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+330,,,Mahidasht 80,,34.32707987,46.79835789,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+331,,,Mahidasht 81,,34.32707987,46.80673642,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+332,,,Mahidasht 82,,34.32875558,46.81343924,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+333,,,Mahidasht 83,,34.32205276,46.81092569,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+334,,,Mahidasht 84,,34.31534993,46.81679066,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+335,,,Mahidasht 85,,34.31451208,46.82935845,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+336,,,Mahidasht 86,,34.3212149,46.8427641,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+337,,,Mahidasht 87,,34.30780925,46.8427641,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+338,,,Mahidasht 88,,34.31199852,46.85030478,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+339,,,Mahidasht 89,,34.3052957,46.84946692,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+340,,,Mahidasht 90,,34.28267366,46.8712511,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+341,,,Mahidasht 91,,34.25334881,46.88800816,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+342,,,Mahidasht 92,,34.2374296,46.90308952,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+343,,,Mahidasht 93,,34.23240248,46.91146805,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+344,,,Mahidasht 94,,34.24078101,46.91984658,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+345,,,Mahidasht 95,,34.25502451,46.91817087,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+346,,,Mahidasht 96,,34.25921378,46.91733302,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+347,,,Mahidasht 97,,34.48375839,46.96676634,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+348,,,Mahidasht 98,,34.49381262,46.99944261,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+349,,,Mahidasht 99,,34.46951488,46.98938838,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+350,,,Mahidasht 100,,34.44856856,47.03044317,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+351,,,Mahidasht 101,,34.47956912,47.03128103,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+352,,,Mahidasht 102,,34.5013533,47.04636238,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+353,,,Mahidasht 103,,34.46700133,47.06228159,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+354,,,Mahidasht 104,,34.46532562,47.06730871,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+355,,,Mahidasht 105,,34.40751376,47.04468667,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+356,,,Mahidasht 106,,34.46113635,47.11339062,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+357,,,Mahidasht 107,,34.44773071,47.14271548,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+358,,,Mahidasht 108,,34.37818891,47.12176915,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+359,,,Mahidasht 109,,34.36562111,47.11255277,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+360,,,Mahidasht 110,,34.28853863,47.04217312,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+361,,,Mahidasht 111,,34.25251096,47.04971379,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+362,,,Mahidasht 112,,34.24245672,47.04887594,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+363,,,Mahidasht 113,,34.24329457,47.10249853,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+364,,,Mahidasht 114,,34.27680869,47.11255277,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+365,,,Mahidasht 115,,34.30864711,47.15444542,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+366,,,Mahidasht 116,,34.32289061,47.15863468,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+367,,,Mahidasht 117,,34.33043129,47.16031039,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+368,,,Mahidasht 118,,34.32372846,47.16449966,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+369,,,Mahidasht 119,,34.33126914,47.17874316,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+370,,,Mahidasht 120,,34.33880982,47.1904731,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+371,,,Mahidasht 121,,34.34886405,47.2047166,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+372,,,Mahidasht 122,,34.32037705,47.22063581,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+373,,,Mahidasht 123,,34.33043129,47.24912281,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+374,,,Mahidasht 124,,34.2927279,47.25247422,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+375,,,Mahidasht 125,,34.2499974,47.2189601,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+376,,,Mahidasht 126,,34.24161887,47.19131095,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+377,,,Mahidasht 127,,34.19972622,47.20052733,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+378,,,Mahidasht 128,,34.19888836,47.29101546,500,Map,,Ubaid,CH,,,,,,,,,,?,?,?,,,,,,Levine 1977,Site name unknown
+379,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+380,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+381,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+382,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+383,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+384,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+385,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+386,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+387,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+388,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+389,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+390,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+391,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+392,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+393,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+394,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+395,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+396,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+397,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+398,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+399,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+400,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+401,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+402,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+403,MR003,,Mehran 3,,33.0442,46.548,5,Literature,,Lower Palaeolithic,,x,,,,,,,,,,,,,,40000,,,Darabi et al. 2012,
+404,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+405,MR005,,Mehran 5,,33.0484,46.5607,5,Literature,,Upper Palaeolithic,,,,x,,,,,,,,,,,,2500,,,Darabi et al. 2012,
+406,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+407,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+408,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+409,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+410,MR009,,Mehran 9,,33.1085,46.493,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,100000,,,Darabi et al. 2012,
+411,MR010,,Mehran 10,,33.1504,46.5075,5,Literature,,"Upper Palaeolithic, Epipalaeolithic?",,,,x,x,,,,,,,,,,,600,,,Darabi et al. 2012,
+412,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+413,MR012,,Mehran 12,,33.094,46.4573,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,6750,,,Darabi et al. 2012,
+414,MR013,,Mehran 13,,33.0944,46.4407,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,300000,,,Darabi et al. 2012,
+415,MR014,,Mehran 14,,33.113,46.4737,5,Literature,,Middle Palaeolithic,,,x,,,,,,,,,,,,,80000,,,Darabi et al. 2012,
+416,MR015,,Amar Merdeg 1,Mehran 15,33.1688,46.2622,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,162500,,,Biglari et al. 2000; Biglari & Shidrang 2006; Darabi et al. 2012,
+417,MR016,,Amar Merdeg 2,Mehran 16,33.1719,46.2586,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,52500,,,Biglari et al. 2000; Biglari & Shidrang 2006; Darabi et al. 2012,
+418,MR017,,Amar Merdeg 3,Mehran 17,33.1853,46.2406,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,2000000,,,Biglari et al. 2000; Biglari & Shidrang 2006; Darabi et al. 2012,
+419,MR018,,Amar Merdeg 4,Mehran 18,33.1897,46.2257,5,Literature,,"Lower Palaeolithic, Middle Palaeolithic",,x,x,,,,,,,,,,,,,2100000,,,Biglari et al. 2000; Biglari & Shidrang 2006; Darabi et al. 2012,
+420,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+421,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+422,MR021,,Mehran 21,,33.1774,46.2023,5,Literature,,Middle Palaeolithic,,,x,,,,,,,,,,,,,1280000,,,Darabi et al. 2012,
+423,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+424,MR023,,Mehran 23,,33.1365,46.2,5,Literature,,Lower Palaeolithic,,x,,,,,,,,,,,,,,3000,,,Darabi et al. 2012,
+425,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+426,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+427,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+428,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+429,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+430,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+431,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+432,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+433,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+434,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+435,MR034,,Kelaw Pikeh,Mehran 34,33.1069,46.5673,5,Literature,,Upper Palaeolithic,,,,x,,,,,,,,,,,,216,,,Nokandeh 2010; Darabi et al. 2012,
+436,MR035,,Mehran 35,,33.0602,46.5499,5,Literature,,,,,,,,,,,,,,,,,,180000,,,Darabi et al. 2012,
+437,MR036,,Mehran 36,,33.0602,46.5499,5,Literature,,Middle Palaeolithic,,,x,,,,,,,,,,,,,8800000,,,Darabi et al. 2012,
+438,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+439,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+440,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+441,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+442,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+443,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+444,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+445,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+446,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+447,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+448,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+449,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+450,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+451,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+452,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+453,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+454,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+455,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+456,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+457,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+458,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+459,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+460,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+461,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+462,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+463,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+464,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+465,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+466,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+467,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+468,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+469,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+470,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+471,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+472,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+473,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites
+474,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Reserved for MR sites

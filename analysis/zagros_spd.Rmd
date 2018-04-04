@@ -14,7 +14,7 @@ library("readr")
 ## Importing, cleaning and calibrating dates
 
 ```{r}
-radiocarbon <- read_csv("./data/zagros_radiocarbon.csv")
+radiocarbon <- read_csv("./analysis/data/zagros_radiocarbon.csv")
 ```
 
 Dates with an error of zero (presumably indicating that the error is unknown) create massive spikes. We don't want these.
