@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "east_fcrescent",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 39.997951694505502, 39.998747463534954 ], [ 49.997858107305944, 39.998747463534954 ], [ 49.999873488165292, 29.998892727166862 ], [ 39.997951694505502, 29.998892727166862 ], [ 39.997951694505502, 39.998747463534954 ] ] ] } }
+]
+}

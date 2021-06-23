@@ -3,31 +3,32 @@ title: "Zagros SPD analysis"
 output: html_notebook
 ---
 
-```{r echo=FALSE}
-library("dplyr")
-library("ggplot2")
+```{r setup, include=FALSE}
+library("tidyverse")
 library("magrittr")
 library("rcarbon")
-library("readr")
 ```
 
 ## Importing, cleaning and calibrating dates
 
-```{r}
-radiocarbon <- read_csv("./analysis/data/zagros_radiocarbon.csv")
-```
+Import and clean data.
+Exclude obvious outliers and dates with unknown errors.
+Assign dummy values to dates without a Lab ID.
 
-Dates with an error of zero (presumably indicating that the error is unknown) create massive spikes. We don't want these.
 
-```{r}
-radiocarbon %>%
-  filter(error > 0) ->
+```{r radiocarbon-data}
+read_csv("./data/efertcres_radiocarbon.csv", col_types = cols()) %T>% 
+  {message("Imported ", nrow(.), " dates.")} %>%
+  filter(!outlier) %>% 
+  drop_na(error) %>% 
+  mutate(lab_id = if_else(is.na(lab_id), paste0("Unknown-", seq_along(lab_id)), lab_id)) %T>% 
+  {message(nrow(.), " dates remaining after cleaning.")} ->
   radiocarbon
 ```
 
 Normalising the calibrated dates is undesirable because it exaggerates calibration curve artifacts (see Roberts et al. 2017).
 
-```{r echo=FALSE}
+```{r calibrate, echo=FALSE}
 cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_id,
                        normalised = FALSE, calCurves="intcal13")
 ```
@@ -36,8 +37,7 @@ cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_i
 ```{r echo=FALSE}
 simple_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
                   spdnormalised = TRUE)
-```
-```{r}
+
 ggplot() +
   geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
   scale_x_reverse()
@@ -59,8 +59,7 @@ Binning dates by site reduces this effect.
 ```{r echo=FALSE}
 bsites_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
                   bins = radiocarbon$site_name, spdnormalised = TRUE)
-```
-```{r}
+
 ggplot() +
   geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
   geom_area(data=bsites_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
@@ -72,12 +71,11 @@ Or, we can try Roberts et al.'s (2017) method of creating arbitrary bins consist
 ```{r echo=FALSE}
 bintrv <- lapply(c(10, 25, 50, 100, 200, 500), binPrep,
                  sites = radiocarbon$site_name, ages = radiocarbon$cra)
-bintrv_spd <- lapply(bcrema, function(b) {
+bintrv_spd <- lapply(bintrv, function(b) {
   spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
                   bins = b, spdnormalised = TRUE)
 })
-```
-```{r}
+
 ggplot() +
   geom_area(data=bsites_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
   geom_line(data=bintrv_spd[[1]]$grid, mapping=aes(x=calBP, y=PrDens), colour="red") +
@@ -95,8 +93,7 @@ The sensitivity analysis shows that for values of *h* between 10 and 500, the re
 bins <- binPrep(radiocarbon$site_name, radiocarbon$cra, 200)
 zagros_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
                   bins = bins, spdnormalised = TRUE)
-```
-```{r}
+
 ggplot() +
   geom_area(data=zagros_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
   scale_x_reverse()
@@ -108,9 +105,26 @@ Using Shennan et al.'s (2013) method, we can use Monte Carlo simulation to accou
 1. Taphonomic effects, by using an exponential null model
 2. The effect of the calibration curve (simulated dates are calibrated using the same curve)
 
+The choice of null model here is tricky. 
+Uniform is clearly inappropriate because on this period we would expect both long-term population growth and taphonomic loss to be evident.
+Shennan argues that exponential (the rcarbon default) should reflect these trends for large (i.e. continental?) regions over long time periods.
+But here we are dealing with quite a small region, and for much of the period (c. 18000–12000 BP) the theoretical expectation is
+So would a linear or logistic model be better?
+Palmisiano et al. use a logistic model for even 12000–2000 BP, justifying it theoretically on the basis of the 'carrying capacity' argument and empirically on the observed shape of their curve.
+Nielsen et al. also use it because they're specifically investigating a Neolithic demographic transition, as does the NDT literature in general.
+I haven't been able to find any example of linear models being used.
+
 ```{r}
-# TODO: out of memory
-# modelTest(cal_dates, radiocarbon$error, nsim = 10, bins = bins, 
-#           timeRange = c(20000, 5000), model = "exponential",
-#           datenormalised = FALSE, spdnormalised = TRUE, ncores=2)
+# TODO: Look at how Alessio did it
+radiocarbon_model <- glm(PrDens ~ calBP, "binomial", zagros_spd$grid,
+                         subset = calBP > 8000 & calBP < 18000)
+
+# Use nsim>=1000 for final results
+modelTest(cal_dates, radiocarbon$error, nsim = 1000, bins = bins,
+          timeRange = c(18000, 8000), model = "custom", predgrid = radiocarbon_model$model,
+          datenormalised = FALSE, spdnormalised = TRUE, ncores=8) ->
+  radiocarbon_mctest
+
+summary(radiocarbon_mctest)
+plot(radiocarbon_mctest)
 ```
