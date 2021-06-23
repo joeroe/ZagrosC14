@@ -4,11 +4,11 @@ Version: 0.2.0.9000
 Authors@R: person("Joe", "Roe", email = "jroeuk@gmail.com", role = c("aut", "cre"))
 Description: Research compendium containing data and source code for a 
     meta-analysis of chronology and regional settlement in the Epipalaeolithic-
-    Neolithic of the Zagros region (20000-6000 BP)
+    Neolithic of the Zagros region (20000-6000 BP).
 Depends: R (>= 3.4.4)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/joeroe/zagrosc14
 BugReports: https://github.com/joeroe/zagrosc14/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.1
