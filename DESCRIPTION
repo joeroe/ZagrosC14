@@ -1,8 +1,10 @@
-Package: zagrosc14
-Title: Chronometric and Spatial Analysis of the Prehistoric Zagros
-Version: 0.0.0.9000
+Package: ZagrosC14
+Title: Chronology and regional settlement in the Zagros, 20,000-6000 BP
+Version: 0.2.0.9000
 Authors@R: person("Joe", "Roe", email = "jroeuk@gmail.com", role = c("aut", "cre"))
-Description: Meta-analysis of radiocarbon dates, site distributions, and other data from the Zagros Mountains, c. 40,000 – 5,000 BP.
+Description: Research compendium containing data and source code for a 
+    meta-analysis of chronology and regional settlement in the Epipalaeolithic-
+    Neolithic of the Zagros region (20000-6000 BP)
 Depends: R (>= 3.4.4)
 License: CC0
 Encoding: UTF-8
