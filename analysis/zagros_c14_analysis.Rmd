@@ -1,15 +1,24 @@
 ---
-title: "Zagros SPD analysis"
+title: "Chronology and regional settlement in the Zagros, 20,000–6000 BP"
 output: html_notebook
 ---
 
-```{r setup, include=FALSE}
+```{r deps}
 library("tidyverse")
-library("magrittr")
 library("rcarbon")
 ```
 
-## Importing, cleaning and calibrating dates
+Research compendium containing data and source code for a meta-analysis of chronology and regional settlement in the Epipalaeolithic-Neolithic of the Zagros region (20000-6000 BP).
+
+## Materials & Methods
+
+### Site location data
+
+```{r data-site}
+sites <- read_csv("./data/zagros_site.csv")
+```
+
+### Radiocarbon data
 
 Import and clean data.
 Exclude obvious outliers and dates with unknown errors.
@@ -33,7 +42,10 @@ cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_i
                        normalised = FALSE, calCurves="intcal13")
 ```
 
-## Simple SPD
+## Results
+
+### Summed probability distribution (SPD)
+
 ```{r echo=FALSE}
 simple_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
                   spdnormalised = TRUE)
@@ -42,9 +54,6 @@ ggplot() +
   geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
   scale_x_reverse()
 ```
-
-
-## Controlling for oversampling
 
 The simple SPD is definitely bullshit, because certain sites have way more dates than others.
 
@@ -99,7 +108,7 @@ ggplot() +
   scale_x_reverse()
 ```
 
-## Simulating a confidence envelope
+#### Simulating a confidence envelope
 
 Using Shennan et al.'s (2013) method, we can use Monte Carlo simulation to account for:
 1. Taphonomic effects, by using an exponential null model
