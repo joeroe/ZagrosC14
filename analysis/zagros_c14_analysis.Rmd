@@ -6,6 +6,7 @@ output: html_notebook
 ```{r deps}
 library("tidyverse")
 library("sf")
+library("stratigraphr")
 library("rcarbon")
 library("patchwork")
 library("ggpubr")
@@ -37,6 +38,10 @@ rbind(
 sites <- read_csv("./data/zagros_site.csv")
 ```
 
+### Relative chronological data
+
+
+
 ### Radiocarbon data
 
 Import and clean data.
@@ -52,24 +57,21 @@ read_csv("./data/zagros_c14.csv") %T>%
   mutate(lab_id = if_else(is.na(lab_id), paste0("Unknown-", seq_along(lab_id)), lab_id)) %T>% 
   {message(nrow(.), " dates remaining after cleaning.")} ->
   dates
+
+dates <- right_join(sites, dates, by = "site_id", na_matches = "never")
 ```
 
 And the NERD database for cross-regional comparisons:
 
 ```{r data-nerd}
 nerd <- c14bazAAR::get_c14data("nerd")
-
-# Augment with "region"
-nerd |>
-  
 ```
 
-
-Normalising the calibrated dates is undesirable because it exaggerates calibration curve artifacts (see Roberts et al. 2017).
+We calibrate them with IntCal20 and `rcarbon`.
+Normalising the dates at this point is undesirable because it exaggerates calibration curve artifacts (Roberts et al. 2017).
 
 ```{r calibrate, echo=FALSE}
-cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_id,
-                       normalised = FALSE, calCurves="intcal13")
+dates <- mutate(dates, cal = c14_calibrate(c14_age, c14_error, normalised = FALSE))
 ```
 
 ## Results
@@ -79,7 +81,7 @@ cal_dates <- calibrate(radiocarbon$cra, radiocarbon$error, ids=radiocarbon$lab_i
 It's often said that the E. Fertile Crescent has "lagged behind" other parts of Southwest Asia in terms of primary field research.
 We can get a rough measure of this by looking at the earliest publication date associated with each site and radiocarbon date in our database.
 
-```{r data-pub-year}
+```{r data-pub-year, warning=FALSE}
 # TODO: Deal with `Inf` warning
 earliest <- function(x) {
   str_extract_all(x, r"(\d\d\d\d)", simplify = TRUE) |>
@@ -100,10 +102,11 @@ sites |>
   mutate(ncum = cumsum(n)) |>
   ggplot(aes(first_pub, ncum)) +
   geom_area() +
-  scale_x_continuous(breaks = seq(1950, 2020, by = 5), limits = c(1950, 2021)) +
-  labs(x = NULL,
-       y = "Sites") +
-  theme_pubclean() ->
+  scale_x_continuous(breaks = seq(1950, 2020, by = 10), limits = c(1950, 2021)) +
+  labs(
+    x = NULL,
+    y = "Sites"
+  ) ->
   p_pub_year1
 
 dates |>
@@ -115,11 +118,16 @@ dates |>
   geom_area() +
   scale_x_continuous(breaks = seq(1950, 2020, by = 10), limits = c(1950, 2021)) +
   labs(x = NULL,
-       y = "Radiocarbon dates") +
-  theme_pubclean() ->
+       y = "Dates") ->
   p_pub_year2
 
-p_pub_year1 / p_pub_year2
+(p_pub_year1 / p_pub_year2) +
+  plot_annotation(
+    title = "Cumulative number of published sites and radiocarbon dates",
+    subtitle = "Eastern Fertile Crescent"
+  )
+
+# ggsave("figures/pub_year.png", width = 254, height = 143, units = "mm")
 ```
 
 <!-- 
@@ -130,11 +138,11 @@ Interestingly I'm not sure that the quantitative data bears this out: there are 
 
 Using Palmisiano et al.'s NERD database, we can also compare this to other regions (this time including dates up to 2000 BP):
 
-```{r data-nerd-pub-date}
+```{r data-nerd-pub-date, warning=FALSE}
 nerd <- mutate(nerd, first_pub = map_dbl(shortref, earliest))
 ```
 
-```{r plot-nerd-pub-date}
+```{r plot-pub-year-byregion}
 nerd |>
   st_as_sf(coords = c("lon", "lat"), crs = 4326) |>
   st_join(regions) |>
@@ -155,31 +163,37 @@ nerd |>
   facet_wrap(vars(region)) +
   geom_area() +
   scale_x_continuous(breaks = seq(1960, 2020, by = 10), limits = c(1960, 2021)) +
-  labs(x = NULL,
+  labs(title = "Cumulative number of radiocarbon dates by region",
+       x = NULL,
        y = "Radiocarbon dates",
-       caption = "Data: Near East Radiocarbon Dates <https://github.com/apalmisano82/NERD>") +
-  theme_pubclean()
+       caption = "Data: Near East Radiocarbon Dates <https://github.com/apalmisano82/NERD>")
+
+# ggsave("figures/pub_year_byregion.png", width = 254, height = 143, units = "mm")
 ```
 
 Again, the quantitative data doesn't match the "lagging behind" perception – at least in terms of radiocarbon dates.
 The growth rate and total sample from the E. Fertile Crescent are roughly the same as for comparable regions;
 the real exception is the explosion of high resolution site-dating in the Southern levant in the last ten years.
 
+### Chronology
+
 ### Summed probability distribution (SPD)
 
 ```{r echo=FALSE}
-simple_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
-                  spdnormalised = TRUE)
+simple_spd <- c14_sum(dates$cal,
+                      datenormalised = FALSE,
+                      spdnormalised = TRUE)
 
 ggplot() +
-  geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
-  scale_x_reverse()
+  geom_area(data=simple_spd[[1]], mapping=aes(x=calBP, y=PrDens)) +
+  scale_x_reverse() +
+  theme_pubclean()
 ```
 
 The simple SPD is definitely bullshit, because certain sites have way more dates than others.
 
 ```{r}
-ggplot(radiocarbon, aes(x = site_name)) +
+ggplot(dates, aes(x = site_name)) +
   geom_bar(stat = "count") +
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.3))
 ```
@@ -258,3 +272,5 @@ modelTest(cal_dates, radiocarbon$error, nsim = 1000, bins = bins,
 summary(radiocarbon_mctest)
 plot(radiocarbon_mctest)
 ```
+
+### Settlement patterns
