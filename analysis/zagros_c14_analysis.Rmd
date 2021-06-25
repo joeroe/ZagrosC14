@@ -5,6 +5,7 @@ output: html_notebook
 
 ```{r deps}
 library("tidyverse")
+library("magrittr") # For T-pipe
 library("sf")
 library("stratigraphr")
 library("rcarbon")
@@ -177,6 +178,12 @@ the real exception is the explosion of high resolution site-dating in the Southe
 
 ### Chronology
 
+Calibrating all dates for which relative chronological information is available:
+
+```{r plot-periods-all}
+dates
+```
+
 ### Summed probability distribution (SPD)
 
 ```{r echo=FALSE}
@@ -201,11 +208,19 @@ ggplot(dates, aes(x = site_name)) +
 Binning dates by site reduces this effect.
 
 ```{r echo=FALSE}
-bsites_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
-                  bins = radiocarbon$site_name, spdnormalised = TRUE)
+# TODO: refresh old code
+library("rcarbon")
+dates2 <- filter(dates, c14_age > 5100 & c14_age < 24000)
+cal_dates <- calibrate(dates2$c14_age, dates2$c14_error, 
+                       # ids = dates2$lab_id,
+                       timeRange = c(20000, 6000),
+                       normalised = FALSE)
+
+bsites_spd <- spd(cal_dates, timeRange = c(20000, 6000), datenormalised = FALSE,
+                  bins = dates$site_id, spdnormalised = TRUE)
 
 ggplot() +
-  geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
+  # geom_area(data=simple_spd$grid, mapping=aes(x=calBP, y=PrDens), fill="grey") +
   geom_area(data=bsites_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
   scale_x_reverse()
 ```
@@ -214,9 +229,9 @@ Or, we can try Roberts et al.'s (2017) method of creating arbitrary bins consist
 
 ```{r echo=FALSE}
 bintrv <- lapply(c(10, 25, 50, 100, 200, 500), binPrep,
-                 sites = radiocarbon$site_name, ages = radiocarbon$cra)
+                 sites = dates2$site_id, ages = dates2$c14_age)
 bintrv_spd <- lapply(bintrv, function(b) {
-  spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+  spd(cal_dates, timeRange = c(20000, 6000), datenormalised = FALSE,
                   bins = b, spdnormalised = TRUE)
 })
 
@@ -234,13 +249,25 @@ ggplot() +
 The sensitivity analysis shows that for values of *h* between 10 and 500, the resulting SPDs are more similar to each other than to the binned-by-site SPD. Low and high intervals appear to mostly amplify the extremes of the SPD. A middle value of *h*=200 therefore seems best.
 
 ```{r echo=FALSE}
-bins <- binPrep(radiocarbon$site_name, radiocarbon$cra, 200)
-zagros_spd <- spd(cal_dates, timeRange = c(20000, 5000), datenormalised = FALSE,
+bins <- binPrep(dates2$site_id, dates2$c14_age, 200)
+zagros_spd <- spd(cal_dates, timeRange = c(20000, 6000), datenormalised = FALSE,
                   bins = bins, spdnormalised = TRUE)
 
 ggplot() +
   geom_area(data=zagros_spd$grid, mapping=aes(x=calBP, y=PrDens)) +
   scale_x_reverse()
+```
+
+```{r plot-spd}
+ggplot(zagros_spd$grid, aes(x=calBP, y=PrDens)) +
+  geom_area() +
+  scale_x_reverse(limits = c(20000, 6000), breaks = seq(20000, 6000, by = -2000)) +
+  labs(title = "Eastern Fertile Crescent, summed probability distribution",
+       subtitle = "N=933, sites=107; binned by site and 200 yr interval",
+       y = NULL, x = "cal BP") +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+
+ggsave("figures/zagros_spd.png", width = 254, height = 143, units = "mm")
 ```
 
 #### Simulating a confidence envelope
@@ -261,16 +288,22 @@ I haven't been able to find any example of linear models being used.
 ```{r}
 # TODO: Look at how Alessio did it
 radiocarbon_model <- glm(PrDens ~ calBP, "binomial", zagros_spd$grid,
-                         subset = calBP > 8000 & calBP < 18000)
+                         subset = calBP > 6000 & calBP < 20000)
 
 # Use nsim>=1000 for final results
-modelTest(cal_dates, radiocarbon$error, nsim = 1000, bins = bins,
-          timeRange = c(18000, 8000), model = "custom", predgrid = radiocarbon_model$model,
+modelTest(cal_dates, dates2$c14_error, nsim = 1000, bins = bins,
+          timeRange = c(20000, 6000), model = "custom", 
+          predgrid = radiocarbon_model$model,
           datenormalised = FALSE, spdnormalised = TRUE, ncores=8) ->
-  radiocarbon_mctest
+  radiocarbon_mctest2
 
 summary(radiocarbon_mctest)
-plot(radiocarbon_mctest)
+plot(radiocarbon_mctest2)
+
+# png("analysis/figures/spd_model_exp.png", width = 254, height = 71, units = "mm",
+#     res = 300)
+# plot(radiocarbon_mctest)
+# dev.off()
 ```
 
 ### Settlement patterns
