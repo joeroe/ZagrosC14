@@ -178,10 +178,171 @@ the real exception is the explosion of high resolution site-dating in the Southe
 
 ### Chronology
 
-Calibrating all dates for which relative chronological information is available:
+```{r plot-dates-by-site}
+dates |>
+  count(site_name) |>
+  ggplot(aes(fct_reorder(site_name, n, .desc = TRUE), n)) +
+  geom_col() +
+  labs(x = NULL, y = "Number of dates") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1, size = 6))
 
-```{r plot-periods-all}
-dates
+#ggsave("figures/dates_by_site.png", width = 254, height = 143, units = "mm")
+```
+
+```{r plot-period-summary}
+dates |>
+  pivot_longer(period_LP:period_H, names_to = "period", values_to = "certainty",
+               values_drop_na = TRUE) |>
+  mutate(
+    period = str_remove(period, "period_"),
+    period = ordered(period,
+                     levels = c("UP",
+                                "MP",
+                                "EP",
+                                "N0",
+                                "N1.1",
+                                "N1.2",
+                                "N2",
+                                "N3",
+                                "C1",
+                                "C2",
+                                "C3",
+                                "B",
+                                "H"
+                                ))
+  ) |>
+  count(period, site_id) |>
+  group_by(period) |>
+  summarise(n_sites = n(), n_dates = sum(n)) |>
+  ggplot(aes(x = period, y = n_sites)) +
+  geom_col() +
+  coord_flip() +
+  labs(x = NULL, y = "Number of sites")
+
+# ggsave("figures/periods_sites.png", width = 127, height = 143, units = "mm")
+
+dates |>
+  pivot_longer(period_LP:period_H, names_to = "period", values_to = "certainty",
+               values_drop_na = TRUE) |>
+  mutate(
+    period = str_remove(period, "period_"),
+    period = ordered(period,
+                     levels = c("UP",
+                                "MP",
+                                "EP",
+                                "N0",
+                                "N1.1",
+                                "N1.2",
+                                "N2",
+                                "N3",
+                                "C1",
+                                "C2",
+                                "C3",
+                                "B",
+                                "H"
+                                ))
+  ) |>
+  count(period, site_id) |>
+  group_by(period) |>
+  summarise(n_sites = n(), n_dates = sum(n)) |>
+  ggplot(aes(x = period, y = n_dates)) +
+  geom_col() +
+  coord_flip() +
+  labs(x = NULL, y = "Number of dates")
+
+# ggsave("figures/periods_dates.png", width = 127, height = 143, units = "mm")
+```
+
+Plotting all dates for which relative chronological information is available:
+
+```{r data-sum-periods, warning=FALSE}
+dates |>
+  pivot_longer(period_LP:period_H, names_to = "period", values_to = "certainty",
+               values_drop_na = TRUE) |>
+  mutate(
+    period = str_remove(period, "period_"),
+    period = ordered(period,
+                     levels = c("UP",
+                                "MP",
+                                "EP",
+                                "N0",
+                                "N1.1",
+                                "N1.2",
+                                "N2",
+                                "N3",
+                                "C1",
+                                "C2",
+                                "C3",
+                                "B",
+                                "H"
+                                ))
+  ) |>
+  group_by(period) |>
+  summarise(cal_sum = c14_sum(cal)) ->
+  spd_byperiod_all
+
+dates |>
+  pivot_longer(period_LP:period_H, names_to = "period", values_to = "certainty",
+               values_drop_na = TRUE) |>
+  filter(certainty == "x") |>
+  mutate(
+    period = str_remove(period, "period_"),
+    period = ordered(period,
+                     levels = c("UP",
+                                "MP",
+                                "EP",
+                                "N0",
+                                "N1.1",
+                                "N1.2",
+                                "N2",
+                                "N3",
+                                "C1",
+                                "C2",
+                                "C3",
+                                "B",
+                                "H"
+                                ))
+  ) |>
+  group_by(period) |>
+  summarise(cal_sum = c14_sum(cal)) ->
+  spd_byperiod_strict
+```
+
+```{r plot-periods}
+spd_byperiod_all %>% 
+  filter(period != "MP") %>% 
+  unnest(cal_sum) %>% 
+  ggplot(aes(calBP, PrDens)) +
+  facet_wrap(vars(period), nrow = 1, scales = "free_x") +
+  geom_area() +
+  scale_x_reverse(limits = c(20000, 6000), 
+                  breaks = seq(20000, 6000, by = -2000)) +  coord_flip() +
+  labs(title = "Summed radiocarbon by typochronological unit",
+       subtitle = "All sites with typochronological data available",
+       x = "cal BP", y = NULL) + 
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank())
+
+# ggsave("figures/c14_periods_all.png", width = 254, height = 143, units = "mm")
+
+spd_byperiod_strict %>% 
+  filter(period != "MP") %>% 
+  unnest(cal_sum) %>% 
+  ggplot(aes(calBP, PrDens)) +
+  facet_wrap(vars(period), nrow = 1, scales = "free_x") +
+  geom_area() +
+  scale_x_reverse(limits = c(20000, 6000), 
+                  breaks = seq(20000, 6000, by = -2000)) +
+  coord_flip() +
+  labs(title = "Summed radiocarbon by typochronological unit",
+       subtitle = "Only sites with secure typochronological data available",
+       x = "cal BP", y = NULL) + 
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(),
+        panel.grid.major.x = element_blank(), 
+        panel.grid.minor.x = element_blank())
+
+# ggsave("figures/c14_periods_strict.png", width = 254, height = 143, units = "mm")
 ```
 
 ### Summed probability distribution (SPD)
